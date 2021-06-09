@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1575e07f0f13d0e45955d55c6a0011c7, type: 3}
+  m_Name: Progres
+  m_EditorClassIdentifier: 
+  conditions:
+  - name: przyciagaPsy
+    isFulfil: 1
+  - name: przykladowaZmiennaKtoraCiezkoUsunacByIndeksInnychZminnychSieNieZmienil
+    isFulfil: 0
+  - name: odstraszylPas
+    isFulfil: 1
+  - name: kupilBeczke
+    isFulfil: 0
