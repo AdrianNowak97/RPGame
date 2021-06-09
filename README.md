@@ -2,7 +2,8 @@
 Open word, adventure game that I making with my frends in free time.
 I implemented this code from scratch based on my team requirements 
  
- 
+
+Code description:
 
 Action- abstract class that eneble interaction with object. Player need to be in area (Sphere Collider) and looking at target (Box Collider). Abstract method OnAction define interaction.
 
