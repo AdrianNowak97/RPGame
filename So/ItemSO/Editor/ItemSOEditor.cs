@@ -9,7 +9,7 @@ public class ItemSOEditor : CustomSOEditor
     ProgresSO progresSO;
 
     SerializedProperty name;
-    SerializedProperty opis;
+    SerializedProperty description;
     SerializedProperty prefabItemu;
     SerializedProperty icon;
     SerializedProperty conditionDesctiptions;
@@ -20,7 +20,7 @@ public class ItemSOEditor : CustomSOEditor
     void OnEnable()
     {
         name = serializedObject.FindProperty("name");
-        opis = serializedObject.FindProperty("opis");
+        description = serializedObject.FindProperty("description");
         prefabItemu = serializedObject.FindProperty("prefabItemu");
         icon = serializedObject.FindProperty("icon");
         conditionDesctiptions = serializedObject.FindProperty("conditionDesctiptions");
@@ -43,7 +43,7 @@ public class ItemSOEditor : CustomSOEditor
         GUIStyle style = new GUIStyle(EditorStyles.textArea);
         style.wordWrap = true;
         EditorGUILayout.LabelField("Opis podstawowy");
-        opis.stringValue = EditorGUILayout.TextArea(opis.stringValue, style);
+        description.stringValue = EditorGUILayout.TextArea(description.stringValue, style);
         GUILayout.EndVertical();
 
        

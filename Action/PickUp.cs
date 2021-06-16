@@ -5,13 +5,13 @@ public class PickUp : Action
 {
     public ItemSO itemObject;
 
-    GameObject coursor;
+    GameObject cursor;
     GameObject player;
     private LookOnItemScript lookOnItemScript;
 
     private void Awake()
     {
-        coursor = GameObject.FindWithTag("Coursor");
+        cursor = GameObject.FindWithTag("Cursor");
         player = GameObject.FindWithTag("Player");
         lookOnItemScript = FindObjectOfType<SecondView>().secondView;
     }
@@ -25,7 +25,7 @@ public class PickUp : Action
 
         if (Input.GetMouseButtonDown(0))
         {
-            coursor.SetActive(false);
+            cursor.SetActive(false);
             player.GetComponent<FirstPersonController>().enabled = false;
             lookOnItemScript.ShowItem(itemObject, gameObject);
         }
