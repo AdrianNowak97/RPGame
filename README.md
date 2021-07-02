@@ -2,6 +2,8 @@
 Open word, adventure game that I making with my frends in free time.
 I implemented this code from scratch based on my team requirements 
  
+ https://www.youtube.com/watch?v=stcXrrhG0JE
+ 
 ***
 
 Code description:
